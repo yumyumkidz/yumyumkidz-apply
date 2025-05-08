@@ -279,11 +279,13 @@
       return;
     }
   } else {
-    form.classList.add('hidden');
-    finalMessage.textContent = '서비스 신청이 완료되었습니다';
-    completionMessage.classList.remove('hidden');
-    completionMessage.scrollIntoView({ behavior: 'smooth' }); 
-  }
+  form.classList.add('hidden');
+  finalMessage.textContent = '서비스 신청이 완료되었습니다';
+  document.getElementById('userEmail').textContent = document.querySelector('input[name="repEmail"]').value; 
+  completionMessage.classList.remove('hidden');
+  completionMessage.scrollIntoView({ behavior: 'smooth' }); 
+}
+
 });
 
   </script>
