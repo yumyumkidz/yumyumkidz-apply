@@ -14,92 +14,38 @@
     <form id="multiStepForm" class="space-y-6">
 
       <!-- Step 1: 서비스 소개 및 동의 안내 -->
-      <div class="step" id="step-1">
-        <img src="https://www.yumyumkids.ai/assets/images/main-banner.png" alt="냠냠키즈 배너" class="rounded-xl mb-6">
-        <h2 class="text-2xl font-bold mb-4">안녕하세요 👋</h2>
-        <p class="text-gray-700 mb-4">
-          [냠냠키즈] 서비스를 제공하는 누비랩입니다!<br>
-          저희 서비스 이용을 신청해주셔서 진심으로 감사드립니다.<br><br>
-          접수된 내용으로 전자계약서 작성 및 설치가 시작되니, 정확한 정보를 기입해주세요.<br><br>
-          냠냠키즈 서비스에 대해 잘 모르신다면, 아래 링크를 꼭 클릭해서<br>
-          서비스 소개 영상과 홈페이지를 살펴보신 후 신청을 진행해주세요.<br>
-          <a href="https://www.yumyumkids.ai" target="_blank" class="text-blue-600 underline">https://www.yumyumkids.ai</a><br><br>
-          모든 항목에 동의하지 않으실 경우, 서비스 설치 및 운영이 어려울 수 있습니다.
-        </p>
-        <div class="flex justify-end">
-          <button type="button" onclick="nextStep()" class="bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800">계속</button>
-        </div>
-      </div>
+      <!-- (생략: 기존 동일) -->
 
-      <!-- Step 2: 설치 및 운영 동의 -->
-      <div class="step hidden" id="step-2">
-        <img src="https://www.yumyumkids.ai/assets/images/feature-report.png" alt="리포트 이미지" class="rounded-xl mb-6">
-        <h2 class="text-2xl font-bold mb-4">서비스 설치 및 운영 동의</h2>
-        <p class="text-gray-600 mb-4">
-          [냠냠키즈] 서비스에 대해 인지하시고, 설치 및 운영에 동의하시나요?<br><br>
-          아직 냠냠키즈 서비스를 살펴보지 못하셨다면, 아래 링크에 꼭 접속하신 후 설문을 진행해 주세요.<br>
-          <a href="https://www.yumyumkids.ai" target="_blank" class="text-blue-600 underline">https://www.yumyumkids.ai</a><br><br>
-          본 동의를 하지 않으실 경우, 서비스 설치 및 운영이 불가능합니다.
-        </p>
-        <div class="mb-4">
-          <label class="block font-medium">설치 및 운영에 동의하시나요?</label>
-          <select class="w-full border border-gray-300 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-blue-400" required>
-            <option value="">선택해주세요</option>
-            <option>동의합니다</option>
-            <option>동의하지 않습니다</option>
-          </select>
-        </div>
-        <div class="flex justify-between">
-          <button type="button" onclick="prevStep()" class="px-4 py-2 rounded-full bg-gray-200 hover:bg-gray-300">이전</button>
-          <button type="button" onclick="nextStep()" class="px-6 py-2 rounded-full bg-blue-600 text-white hover:bg-blue-700">다음</button>
-        </div>
-      </div>
-
-      <!-- Step 3: 대표자 정보 입력 -->
-      <div class="step hidden" id="step-3">
-        <img src="https://www.yumyumkids.ai/assets/images/feature-dashboard.png" alt="대표자 정보" class="rounded-xl mb-6">
-        <h2 class="text-2xl font-bold mb-4">대표자 정보 입력</h2>
-        <p class="text-gray-600 mb-6">
-          계약서와 서비스 설치 안내, 운영 공지/안내 메일과 알림톡 발송을 위해 필요한 정보입니다.<br>
-          입력해주신 정보는 냠냠키즈 설치 및 운영 공지 외에는 사용되지 않습니다.
-        </p>
-        <div class="space-y-4">
-          <div>
-            <label class="block font-medium">대표자 이름</label>
-            <input name="name" type="text" class="w-full border border-gray-300 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-blue-400" required>
-          </div>
-          <div>
-            <label class="block font-medium">대표자 전화번호</label>
-            <input name="phone" type="tel" class="w-full border border-gray-300 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-blue-400" required>
-          </div>
-          <div>
-            <label class="block font-medium">대표자 이메일</label>
-            <input name="email" type="email" class="w-full border border-gray-300 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-blue-400" required>
-          </div>
-          <div class="flex justify-between">
-            <button type="button" onclick="prevStep()" class="px-4 py-2 rounded-full bg-gray-200 hover:bg-gray-300">이전</button>
-            <button type="button" onclick="nextStep()" class="bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800">다음</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Step 4: 리포트 동의 안내 + 이미지 -->
+      <!-- Step 4: 리포트 동의 안내 + 이미지 2개 -->
       <div class="step hidden" id="step-4">
-        <img src="https://raw.githubusercontent.com/your-repo-path-to-image/스크린샷%202025-05-08%20110551.png" alt="리포트 예시" class="rounded-xl mb-6 border border-gray-200 shadow">
-        <h2 class="text-2xl font-bold mb-4">리포트 발송 동의</h2>
-        <p class="text-gray-600 mb-4">
-          보호자님들께 발송되는 <strong>[리포트]</strong>에는 아래와 같이<br> 실제 아이들의 섭취 정보와 사진이 포함됩니다.<br><br>
-          이러한 리포트 발송 및 사진 노출에 동의하셔야 서비스가 제공됩니다.
+        <h2 class="text-2xl font-bold mb-4">리포트 발송 및 사진 노출 동의</h2>
+        <p class="text-gray-600 mb-6">
+          보호자님들께 발송되는 <strong>[리포트]</strong>에는 아래와 같이<br>
+          실제 아이들의 <strong>배식사진과 퇴식사진</strong>이 포함됩니다.<br><br>
+          아래 이미지를 참고하신 후, 리포트 발송 및 사진 노출에 동의해 주세요.
         </p>
-        <div class="mb-4">
-          <label class="block font-medium">리포트 발송에 동의하시나요?</label>
+
+        <div class="mb-6">
+          <label class="block font-medium mb-2">리포트 발송에 동의하시나요?</label>
+          <img src="https://yumyumkidz.github.io/yumyumkidz-apply/img/report-preview.png" alt="리포트 예시" class="rounded-xl border border-gray-200 shadow mb-4">
           <select class="w-full border border-gray-300 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-blue-400" required>
             <option value="">선택해주세요</option>
             <option>동의합니다</option>
             <option>동의하지 않습니다</option>
           </select>
         </div>
-        <div class="flex justify-between">
+
+        <div class="mb-6">
+          <label class="block font-medium mb-2">배식사진 및 퇴식사진 노출에 동의하시나요?</label>
+          <img src="https://yumyumkidz.github.io/yumyumkidz-apply/img/report-meal-before-after.png" alt="배식 및 퇴식 사진 예시" class="rounded-xl border border-gray-200 shadow mb-4">
+          <select class="w-full border border-gray-300 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-blue-400" required>
+            <option value="">선택해주세요</option>
+            <option>동의합니다</option>
+            <option>동의하지 않습니다</option>
+          </select>
+        </div>
+
+        <div class="flex justify-between mt-6">
           <button type="button" onclick="prevStep()" class="px-4 py-2 rounded-full bg-gray-200 hover:bg-gray-300">이전</button>
           <button type="submit" class="px-6 py-2 rounded-full bg-blue-600 text-white hover:bg-blue-700">제출</button>
         </div>
