@@ -10,20 +10,17 @@
     body {
       font-family: 'Noto Sans KR', sans-serif;
     }
-    .hidden { display: none; }
-    .form-input {
-      @apply w-full border border-gray-300 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-blue-400;
-    }
-    .form-button {
-      @apply px-6 py-2 rounded-full font-semibold transition shadow hover:shadow-lg hover:scale-105;
+    .hidden {
+      display: none;
     }
   </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
   <div class="max-w-2xl mx-auto mt-12 p-8 bg-white shadow-xl rounded-2xl">
     <form id="multiStepForm" class="space-y-10">
-  <!-- 대표 배너 이미지 -->
-  <img src="img/nanyangkids-logo.png" alt="냠냠키즈 대표 로고" class="rounded-xl mb-6 w-full object-contain">
+      <!-- 대표 배너 이미지 -->
+      <img src="img/nanyangkids-logo.png" alt="냠냠키즈 대표 로고" class="rounded-xl mb-6 w-full object-contain">
+
 
   <!-- Step 1: 서비스 소개 및 동의 안내 -->
   <div class="step" id="step-1">
@@ -185,7 +182,10 @@
         </div>
         <div class="flex justify-between mt-6">
           <button type="button" onclick="prevStep()" class="px-4 py-2 rounded-full bg-gray-200 hover:bg-gray-300">이전</button>
-          <button type="submit" class="px-6 py-2 rounded-full bg-blue-600 text-white hover:bg-blue-700">제출</button>
+          <button type="submit"
+  class="px-6 py-2 rounded-full font-semibold transition shadow hover:shadow-lg hover:scale-105 bg-pink-500 text-white hover:bg-pink-600">
+  제출
+</button>
         </div>
       </div>
     </form>
