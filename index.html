@@ -67,42 +67,45 @@
 
       <!-- Step 3: 기관 정보 입력 -->
       <div class="step hidden" id="step-3">
-        <h2 class="text-2xl font-bold mb-4">기관 정보 입력</h2>
-        <p class="text-gray-600 mb-6">
-          계약 관련 문서와 서비스 운영을 위해 기관 정보를 정확히 입력해 주세요.
-        </p>
-        <div class="space-y-4">
-          <div>
-            <label class="block font-medium">기관명</label>
-             <input name="orgName" type="text" class="form-input" required>
-          </div>
-          <div>
-            <label class="block font-medium">설립유형</label>
-            <select name="orgType" class="form-input" required>
-              <option value="">선택해주세요</option>
-              <option>국공립</option>
-              <option>사회복지법인</option>
-              <option>법인단체 등</option>
-              <option>민간</option>
-              <option>가정</option>
-              <option>협동</option>
-              <option>직장</option>
-            </select>
-          </div>
-          <div>
-            <label class="block font-medium">기관 전화번호</label>
-            <input name="orgPhone" type="tel" class="w-full border border-gray-300 rounded-xl p-3" required>
-          </div>
-          <div>
-            <label class="block font-medium">기관 주소</label>
-            <input name="orgAddress" type="text" class="w-full border border-gray-300 rounded-xl p-3" required>
-          </div>
-          <div class="flex justify-between">
-            <button type="button" onclick="prevStep()" class="px-4 py-2 rounded-full bg-gray-200 hover:bg-gray-300">이전</button>
-            <button type="button" onclick="nextStep()" class="bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800">다음</button>
-          </div>
-        </div>
-      </div>
+  <h2 class="text-2xl font-bold mb-4">기관 정보 입력</h2>
+  <p class="text-gray-600 mb-6">계약 관련 문서와 서비스 운영을 위해 기관 정보를 정확히 입력해 주세요.</p>
+  <div class="space-y-4">
+    <div>
+      <label class="block font-medium">기관명</label>
+      <input name="orgName" type="text" 
+        class="w-full border border-gray-300 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-pink-400" required>
+    </div>
+    <div>
+      <label class="block font-medium">설립유형</label>
+      <select name="orgType" 
+        class="w-full border border-gray-300 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-pink-400" required>
+        <option value="">선택해주세요</option>
+        <option>국공립</option>
+        <option>사회복지법인</option>
+        <option>법인단체 등</option>
+        <option>민간</option>
+        <option>가정</option>
+        <option>협동</option>
+        <option>직장</option>
+      </select>
+    </div>
+    <div>
+      <label class="block font-medium">기관 전화번호</label>
+      <input name="orgPhone" type="tel"
+        class="w-full border border-gray-300 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-pink-400" required>
+    </div>
+    <div>
+      <label class="block font-medium">기관 주소</label>
+      <input name="orgAddress" type="text"
+        class="w-full border border-gray-300 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-pink-400" required>
+    </div>
+    <div class="flex justify-between">
+      <button type="button" onclick="prevStep()" class="form-button bg-gray-200 hover:bg-gray-300">이전</button>
+      <button type="button" onclick="nextStep()" class="form-button bg-pink-500 text-white hover:bg-pink-600">다음</button>
+    </div>
+  </div>
+</div>
+
 
       <!-- Step 4: 대표자 정보 입력 -->
       <div class="step hidden" id="step-4">
@@ -133,23 +136,26 @@
 
       <!-- Step 5: 교육일 및 스캔 시작일 선택 -->
       <div class="step hidden" id="step-5">
-        <h2 class="text-2xl font-bold mb-4">교육 일정 및 스캔 시작일 선택</h2>
-        <p class="text-gray-600 mb-4">
-          신청일 기준으로 가능한 일정만 자동으로 표시됩니다.
-        </p>
-        <div class="mb-4">
-          <label class="block font-medium">온라인 교육 희망일</label>
-          <select id="educationDate" class="w-full border border-gray-300 rounded-xl p-3" required></select>
-        </div>
-        <div class="mb-4">
-          <label class="block font-medium">스캔 시작일</label>
-          <select id="scanDate" class="w-full border border-gray-300 rounded-xl p-3" required></select>
-        </div>
-        <div class="flex justify-between">
-          <button type="button" onclick="prevStep()" class="px-4 py-2 rounded-full bg-gray-200 hover:bg-gray-300">이전</button>
-          <button type="button" onclick="nextStep()" class="bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800">다음</button>
-        </div>
-      </div>
+  <h2 class="text-2xl font-bold mb-4">교육 일정 및 스캔 시작일 선택</h2>
+  <p class="text-gray-600 mb-4">신청일 기준으로 가능한 일정만 자동으로 표시됩니다.</p>
+  <div class="mb-4">
+    <label class="block font-medium">온라인 교육 희망일</label>
+    <select id="educationDate" 
+      class="w-full border border-gray-300 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-pink-400" required>
+    </select>
+  </div>
+  <div class="mb-4">
+    <label class="block font-medium">스캔 시작일</label>
+    <select id="scanDate" 
+      class="w-full border border-gray-300 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-pink-400" required>
+    </select>
+  </div>
+  <div class="flex justify-between">
+    <button type="button" onclick="prevStep()" class="form-button bg-gray-200 hover:bg-gray-300">이전</button>
+    <button type="button" onclick="nextStep()" class="form-button bg-pink-500 text-white hover:bg-pink-600">다음</button>
+  </div>
+</div>
+
 
       <!-- Step 6: 리포트 및 사진 노출 동의 -->
       <div class="step hidden" id="step-6">
